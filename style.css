@@ -465,9 +465,23 @@ footer{
     font-weight: 500;
 }
 
-/* responsive */
-.show-links{
-    top: 0;
+
+.nav-cancel{
+    position: absolute;
+    z-index: 10;
+    font-weight: 700;
+    font-size: 25px;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+    color: grey;
+    transition: color 0.4s;
+    position: fixed;
+    display: none;
+}
+
+.nav-cancel:hover{
+    color: black;
 }
 
 @media screen and (max-width: 1024px) {
@@ -480,11 +494,11 @@ footer{
         width: 100vw;
         padding-top: 2rem;
         padding-bottom: 2rem;
+        position: fixed;
     }
 
     .show-menu {
         display: block;
-        z-index: 10;
     }
 
     .nav-links ul {
@@ -520,6 +534,10 @@ footer{
         order: -1;
     }
 
+    .cta-img{
+        order: -1;
+    }
+
     .header-right{
         order: -1;
     }
@@ -532,7 +550,6 @@ footer{
 
     .examples-img{
         width: 80%;
-        min-width: 300px;
     }
 
 }
